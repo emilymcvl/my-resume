@@ -1,0 +1,247 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                
+top=0.5in,                          
+bottom=0.5in,                       
+left=0.5in,                         
+right=0.5in]{geometry}              
+
+%=========================================
+% FONT, COLOR, AND STYLE IMPROVEMENTS
+%=========================================
+\usepackage{mathpazo}       % Elegant Palatino serif font for body text
+\usepackage[scaled]{mathpazo}     % Helvetica for section titles / name
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}            % Color for text and titles
+\colorlet{bodygray}{gray!20!black}     % Subtle gray for main text
+\colorlet{titleblack}{black}           % Deep black for section headers
+\colorlet{namegray}{gray!10!black}     % Lighter gray for contact info
+
+\usepackage{enumitem}               
+\usepackage[hidelinks]{hyperref}    
+\usepackage{titlesec}               
+\raggedright                        
+\pagestyle{empty}                   
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%=========================================
+% SECTION HEADINGS
+%=========================================
+\titleformat{\section}
+  {\color{titleblack}\normalfont\Large\bfseries\scshape}
+  {}{0pt}{}
+  [\vspace{1pt}\titlerule\vspace{-6pt}]
+
+%=========================================
+% BULLET STYLING
+%=========================================
+\renewcommand\labelitemi{$\vcenter{\hbox{$\circ$}}$}
+\setlist[itemize]{itemsep=1pt, leftmargin=14pt, topsep=5pt}
+
+%=========================================
+% GLOBAL TEXT COLOR
+%=========================================
+\color{bodygray}
+
+%=========================================
+% RESUME BEGINS HERE
+%=========================================
+\begin{document}
+%==============================
+% NAME & CONTACT
+%==============================
+\centerline{\Huge Emily R. McColville}
+
+\vspace{5pt}
+
+\centerline{\href{mailto:contact@mccolville.com}{contact@mccolville.com} \;|\; Ottawa, ON \;|\; 
+\href{https://linkedin.com/in/emilymcvl}{linkedin.com/in/emilymcvl} \;|\; 
+\href{https://github.com/emilymcvl}{github.com/emilymcvl}}
+
+\vspace{-10pt}
+
+%==============================
+% SKILLS
+%==============================
+\section*{Skills}
+\textbf{Research \& Analysis:} AI Model Development, RNA-Seq, Statistical Modeling, Scientific Writing \\
+\textbf{Technical:} Python, R, TensorFlow, PyTorch, DeepLabCut, OpenCV, NumPy, Pandas, Scikit-Learn, AWS, Git \\
+\textbf{Communication:} Public Speaking, Science Communication, Academic Writing, Bilingual (Korean, Intermediate)
+
+\vspace{-4pt}
+
+%==============================
+% EDUCATION
+%==============================
+\section*{Education}
+\textbf{Carleton University} -- PhD in Biology (AI and Bioinformatics) \hfill Expected 2025 \\
+\textbf{Carleton University} -- B.Sc. (Honours) in Biology \hfill 2018 -- 2022
+
+\vspace{-4pt}
+
+
+
+%==============================
+% PROJECTS
+%==============================
+\section*{Projects}
+
+\textbf{Blooop – Digital Research Notebook} \hfill Present \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Developing a cross-platform digital notebook for researchers using Flutter/Dart with Riverpod and Hive/SQLite architecture.
+  \item Designing a universal file reader, hybrid text editor and whiteboard interface supporting handwriting, dynamic text, and scientific calculators (e.g., media prep, molarity, C1V1).
+\end{itemize}
+
+\textbf{AstroLedger – Pattern-Discovery and Trend Mapping System} \hfill May 2024 -- Present \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Designed a data visualization system correlating global events (e.g., geopolitical shifts, pandemics), financial indicators (e.g., S&P 500 trends, crypto volatility), and esoteric frameworks (e.g., Tzolk’in, Wu Xing, Kabbalah, Gematria, Hermetic astrology).
+  \item Implemented analytics pipeline using Python and D3.js for time-series trend tracking and interactive dashboards.
+\end{itemize}
+
+\textbf{AI-Driven Insect Imaging Model} \hfill Sept 2023 -- A 2024 \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Built an AI-based imaging pipeline to automate measurement and tracking of edible crickets, enabling data-driven scalability in insect-farming R&D, supporting sustainable alternative farming
+  \item Reduced manual measurement time by 80\% and enabled individual growth analytics
+  \item Research supported by the National Research Council and Mitacs; presented internationally and received a conference award.
+\end{itemize}
+
+
+
+
+
+%==============================
+% EMPLOYMENT
+%==============================
+\section*{Employment}
+
+\textbf{Consulting Researcher, Aspire} \hfill Sept 2024 -- May 2025 \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Advised internal research teams on AI model development to enhance R\&D scalability and optimization for biological analysis. 
+  \item Advised on hyperspectral imaging workflows to improve experimental throughput and quality control
+  \item Delivered technical reports and strategic recommendations to streamline data processing pipelines and automation efficiency. 
+\end{itemize}
+
+\textbf{MITACS Industry Researcher, BugMars} \hfill Apr 2024 -- Dec 2024 \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Partnered with industry on AI-based imaging systems for insect research and automation under a \$30,000 Mitacs Accelerate Grant.
+  \item Managed image pipelines and AWS data storage; labeled and annotated 10,000+ images for machine learning training datasets.
+\end{itemize}
+
+\textbf{Teaching Assistant, Carleton University} \hfill Sept 2021 -- Present \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Led tutorials and laboratory sessions in advanced and comparative anatomy for 100+ undergraduates.
+  \item Provided detailed written feedback on 300+ lab reports per semester, improving academic performance
+  \item Received Teaching Assistant Excellence Award (2024) for exceptional instructional mentorship.
+\end{itemize}
+
+\textbf{Contract Researcher, Carleton University} \hfill May 2022 -- Aug 2022 \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Conducted laboratory experiments on microplastic ingestion in insects to assess environmental impacts of biosolid treatments.
+  \item Processed and analyzed large laboratory and spectroscopy datasets relevant to environmental policy development.
+\end{itemize}
+
+\textbf{Residence Fellow, Carleton University} \hfill Sept 2019 -- Apr 2020 \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Supervised 60+ residence students, providing academic, social, and crisis management support.
+  \item Designed residence programming to promote inclusivity and community engagement.
+\end{itemize}
+
+%\begin{itemize}
+  %\item Performed vendor reconciliations and completed year-end financial records with high accuracy.
+  %\item Streamlined accounting processes and improved efficiency through organized data workflows.
+%\end{itemize}
+
+%\textbf{Retail Associate, Cycling Elements} \hfill May 2020 -- Aug 2021 \\
+%\vspace{-6pt}
+%\begin{itemize}
+  %\item Managed retail operations with daily sales exceeding \$20K, coordinated customer service and appointments 
+  %\item Maintained inventory and optimized retail workflow during peak summer seasons.
+%\end{itemize}
+
+\vspace{-4pt}
+
+%==============================
+% RESEARCH & PUBLICATIONS
+%==============================
+\section*{Research \& Publications}
+
+\textbf{Life Science Beyond Earth: Exploring the Legal Landscape in Outer Space Exploration} \\
+\textit{IAF Proceedings (2024); IISL Publication (2026),} \href{https://doi.org/10.52202/078384-0070}{DOI: 10.52202/078384-0070} \\[6pt]
+
+\textbf{Crickets Under Pressure: AI and RNA-seq Insights into Insect Immunity and Resilience for Food Systems on Earth and Beyond} \\
+\textit{PhD Dissertation in progress, Carleton University.} \\[6pt]
+
+\textbf{Microplastics in the Digestive Tract of Gryllus pennsylvanicus Crickets in a Biosolid-Treated Agricultural Field} \\
+\textit{Nature: Scientific Reports, 2025,} \href{https://doi.org/10.1038/s41598-025-06895-w}{DOI: 10.1038/s41598-025-06895-w} \\[6pt]
+
+\textbf{The Disadvantage of Having a Big Mouth: The Relationship Between Insect Body Size and Microplastic Ingestion} \\
+\textit{Environmental Science \& Technology, Accepted 2025,} \href{https://doi.org/10.1101/2025.01.16.633357}{DOI: 10.1101/2025.01.16.633357} \\[6pt]
+
+\textbf{Diet Particle Size Influences Tropical House Cricket Life History} \\
+\textit{Journal of Insects as Food and Feed, 2025,} \href{https://doi.org/10.1163/23524588-00001365}{DOI: 10.1163/23524588-00001365} \\[6pt]
+
+\textbf{Applying Nutritional Ecology to Optimize Diets of Crickets Raised for Food and Feed} \\
+\textit{Royal Society Open Science, 2024,} \href{https://doi.org/10.1098/rsos.241710}{DOI: 10.1098/rsos.241710} \\[6pt]
+
+\textbf{Carbonodraco lundi gen. et sp. nov.: The Oldest Parareptile and New Insights into Early Reptile Radiation} \\
+\textit{Royal Society Open Science, 2019,} \href{https://doi.org/10.1098/rsos.191191}{DOI: 10.1098/rsos.191191}
+
+\vspace{-4pt}
+
+%==============================
+% AWARDS & SCHOLARSHIPS
+%==============================
+\section*{Awards \& Scholarships}
+
+\textbf{Summit for Space Sustainability Travel Grant (New York)} \\
+{\color{gray!60!black}\textit{Space Generation Advisory Council, Secure World Foundation, \& UK Space Agency}} – Awarded \$3,500 USD for video submission on space sustainability (2023). \\[6pt]
+
+\textbf{Mitacs Innovation Grant (\$30,000 CAD)} \\
+{\color{gray!60!black}\textit{Mitacs Canada}} – Supported AI-driven insect research for sustainability and automation (2023–2024). \\[6pt]
+
+\textbf{Canadian Reduced Gravity Experimental Design Competition (Longueuil)} \\
+{\color{gray!60!black}\textit{National Research Council Canada \& Canadian Space Agency}} – Awarded microgravity flight campaign; recognized for novelty and excellence in space-biology research proposal and successful flight readiness completion (2024). \\[6pt]
+
+\textbf{Best Poster – Insects to Feed the World (Singapore)} \\
+{\color{gray!60!black}\textit{Insects to Feed the World Conference Committee}} – Third place for AI-model research presentation (2024). \\[6pt]
+
+\textbf{Best Talk – Insect Biotechnology Conference (Niagara)} \\
+{\color{gray!60!black}\textit{Insect Biotechnology Conference Committee}} – Third place for AI model development presentation (2022). \\[6pt]
+
+\textbf{Teaching Assistant Excellence Award} \\
+{\color{gray!60!black}\textit{Carleton University, Department of Biology}} – Recognized for outstanding instructional performance and mentorship (2024). \\[6pt]
+
+\textbf{Academic All-Canadian} \\
+{\color{gray!60!black}\textit{U Sports \& Carleton Athletics}} – Maintained 80\%+ GPA while competing as a varsity athlete (2021).
+
+
+%==============================
+% ACTIVITIES & INTERESTS
+%==============================
+\section*{Activities \& Interests}
+
+\textbf{Varsity Rower} – Competed in LW1, LW2, and 8+ events; balanced 15+ hrs/week of training with full-time studies; recognized as Academic All-Canadian. \\[4pt]
+
+\textbf{Judo Athlete \& Coach} – Trains 10 hrs/week and coaches youth 1.5 hrs/week at the RA Judo Club, emphasizing discipline and mentorship. \\[4pt]
+
+\textbf{Canon Canada Futures Cohort} – Selected participant focusing on science communication and wildlife photography. \\[4pt]
+
+\textbf{Korean Language Study} – Continuing study of Korean grammar, reading, and conversation for academic and personal fluency. \\[4pt]
+
+
+\textbf{Let’s Talk Science Volunteer} – Designed and delivered educational modules on astro-agriculture to Ottawa-area schools, promoting youth engagement in sustainability and STEM.
+\end{itemize}
+
+
+\end{document}
